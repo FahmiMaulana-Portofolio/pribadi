@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahmi Portofolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-----------HEADER------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">Cari Saya? 😉...</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Beranda</a></li>
+                <li><a href="#About">Profil</a></li>
+                <li><a href="#portofolio">Pengalaman</a></li>
+                <li><a href="#dokumentasi">Dokumentasi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <i class='bx bx-x-circle' onclick="closemenu()"></i>
+            </ul>
+            <i class="bx bx-menu" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, Saya <span>Fahmi</span><span2> Maulana</span2></h1>
+            <h3>Lulusan S-1 Teknik Mekatronika</h3>
+        </div>
+    </div>
+</div>
+
+<!------------PROFIL----------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/robotika.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle"> Profil Saya</h1>
+                <p>Halo...Nama saya Fahmi Maulana, panggil saja <span>Fahmi</span>.
+                    saya seorang fresh graduate sarjana teknik mekatronika.
+                    selama menempuh pendidikan saya belajar tentang sistem komputasi,
+                    otomasi industri, sistem kontrol, dll. teknik mekatronika sendiri
+                    terintegrasi dari 3 bidang keilmuan yaitu mekanika, elektronika,
+                    dan informatika.</p>
+
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('Keahlian')">Keahlian</p>
+                    <p class="tab-links" onclick="opentab('Organisasi')">Organisasi</p>
+                    <p class="tab-links" onclick="opentab('Pendidikan')">Pendidikan</p>
+                </div>
+                <div class="tab-contents active-tab" id="Keahlian">
+                    <ul>
+                        <li><span>Microsoft Office</span><br>Operasi Word, Excel, dan PPT hingga tingkat menengah</li>
+                        <li><span>Gambar Teknik</span><br>Membaca Gambar dan Desain Gambar secara jelas sesuai dimensi yang ada</li>
+                        <li><span>Sistem Kontrol</span><br>Mampu membuat perangkat elektronika beroperasi secara terkontrol (otomatis)
+                            menggunakan sebuah chip mikrokontroler</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Organisasi">
+                    <ul>
+                        <li><span>Himpunan Mahasiswa Mekatronika (2021)</span><br>C.O. Divisi Research, Robotic, and Development
+                        yang berperan meningkatkan pengembangan keahlian di bidang mekatronika dan melakukan pelatihan seputar
+                        robotika serta sistem kontrol.</li>
+                        <li><span>Mechatronic Robotic Team (2021 - 2022)</span><br>Kontribusi penuh mengikuti lomba seputar robotika 
+                        seperti line follower robot dan mengadakan agenda acara besar nasional. Berperan sebagai penanggung
+                        jawab tim selama ada perlombaan.</li>
+                        <li><span>Asisten Praktikum (2022 - 2023)</span><br>Memberikan tugas praktik di bidang Gambar Teknik
+                        dan Sistem Kontrol.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Pendidikan">
+                    <ul>
+                        <li><span>Perguruan Tinggi</span><br>S-1 TEKNIK MEKATRONIKA, UTM</li>
+                        <li><span>Sekolah</span><br>SMAN 2 BANGKALAN</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------SERVICES------------------>
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-tittle">Pengalaman</h1>
+        <div class="services-list">
+            <div>
+                <i class='bx bxs-wrench'></i>
+                <h2>Pengalaman Kerja</h2>
+                <p>Pengalaman kerja yaitu magang di divisi bengkel CNC
+                    PT. ADILUHUNG SARANASEGARA INDONESIA sebagai operator mesin.</p>
+                <a href="#">pelajari selengkapnya></a>
+            </div>
+            <div>
+                <i class='bx bx-hard-hat'></i>
+                <h2>Projek</h2>
+                <p><ul class="list-group list-group-numbered">
+                    <li class="list-group-item active">Pembakaran sampah tanpa asap (otomasi industri)</li>
+                    <li class="list-group-item">mobile robot - line following</li>
+                    <li class="list-group-item disabled">Kursi roda berbasis vision - projek akhir (SKRIPSI)</li></ul></p>
+                <a href="#">pelajari selengkapnya></a>
+            </div>
+            <div>
+                <i class='bx bx-award'></i>
+                <h2>Prestasi</h2>
+                <p><ul class="list-group list-group-numbered">
+                    <li class="list-group-item active">Top 10 Essay Competition (2021)</li>
+                    <li class="list-group-item">Juara 3 Line Following Robot - technowar (2021)</li></ul></p>
+                <a href="#">pelajari selengkapnya></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------PORTOFOLIO--------------->
+<div id="dokumentasi">
+    <div class="container">
+        <h1 class="sub-tittle">Dokumentasi</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_20220205_103808.jpg">
+                <div class="layer">
+                    <h3>Magang</h3>
+                    <p>Internship di PT. ADILUHUNG SARANASEGARA INDONESIA selama
+                        satu bulan pada Januari 2022 - Februari 2022</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Lomba Robot</h3>
+                    <p>Memenangkan lomba robot Line Follower tingkat nasional
+                        bersama tim MRT yang meraih juara 1 dan juara 3 
+                        di universitas kanjuruhan malang</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Operator IT</h3>
+                    <p>Diberikan kepercayaan untuk memegang operator IT selama
+                        ada acara besar baik perlombaan robot dan acara himpunan</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/1733183905973.jpg">
+                <div class="layer">
+                    <h3>Asisten Praktikum</h3>
+                    <p>tenaga pengajar Mahasiswa dalam bidang sistem kendali
+                        suatu alat sehingga alat tersebut diketahui bekerja dengan baik atau tidak</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.jpg">
+                <div class="layer">
+                    <h3>Aplikasi</h3>
+                    <p>Membuat aplikasi berbasis android untuk mengoneksikan perangkat
+                        elektronik dengan bluetooth</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work6.jpg">
+                <div class="layer">
+                    <h3>Projek</h3>
+                    <p>Membuat alat pembakaran sampah tanpa asap
+                        bertujuan mengurangi polusi menggunakan Sistem
+                        arduino uno</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work7.jpg">
+                <div class="layer">
+                    <h3>Essay</h3>
+                    <p>Kategori top 10 dalam lomba essay dengan mengusungkan
+                        tema teknologi terkini</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work8.png">
+                <div class="layer">
+                    <h3>Asisten Gambar Teknik</h3>
+                    <p>Membuat desain quadroped menggunakan software
+                        berbasis CAD yaitu Autodesk inventor</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work9.jpg">
+                <div class="layer">
+                    <h3>Projek Besar</h3>
+                    <p>Membuat kursi roda berdasarkan gestur mata bagi
+                        pasien yang stroke total tidak bisa menggerakkan semua anggota tubuh</p>
+                        <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">pelajari selengkapnya</a>
+    </div>
+</div>
+
+<!-------------KONTAK--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Hubungi Saya</h1>
+                <p><i class='bx bxl-gmail'></i> f4hm1ma4ul4n41602@gmail.com</p>
+                <p><i class='bx bx-send'></i> +62 8898 9508 084</p>
+                <div class="social-icon">
+                    <a href="http://m.me/imhaf_analuam"><i class="bx bxl-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/imhaf_analuam/profilecard/?igsh=MWw5eGUyZWc5NnQ0MA=="><i class="bx bxl-instagram"></i></a>
+                    <a href="http://wa.me/+6288989508084"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+                <a href="images/CV_Fahmi Maulana.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ 2024-2025 By Fahmi M | Wassalamualaikum 🙏 <i class='bx bxs-heart'></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu")
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-150px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyOh4S_4EqIJbMjNxV760x2MiLbxzMtXKumMugI92-kPBG-H72hc5AtL0fVwGUTfMi1rw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Pesan Berhasil Diteruskan !!!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
